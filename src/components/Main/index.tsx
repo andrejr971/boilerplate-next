@@ -1,5 +1,9 @@
 import { Heading } from './styles';
 
-export function Main() {
-  return <Heading>test</Heading>;
+export interface IMainProps {
+  title?: string;
+}
+
+export function Main({ title = 'Main' }: IMainProps) {
+  return <Heading>{title}</Heading>;
 }

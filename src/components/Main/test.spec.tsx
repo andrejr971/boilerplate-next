@@ -4,7 +4,7 @@ import { Main } from '.';
 
 describe('<Main />', () => {
   it('should render heading', () => {
-    const { container } = renderWithTheme(<Main />);
+    const { container } = renderWithTheme(<Main title="test" />);
 
     expect(screen.getByRole('heading', { name: /test/i })).toBeInTheDocument();
 
