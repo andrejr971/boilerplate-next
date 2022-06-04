@@ -2,13 +2,240 @@
 
 exports[`<Main /> should render heading 1`] = `
 .c0 {
-  font-family: Saira,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-  font-size: 3.2rem;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 1.6rem;
 }
 
-<h1
+.c0 img {
+  width: 30rem;
+}
+
+.c0 h2 {
+  font-family: Saira,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 2rem;
+  color: #F1EFFD;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.c0 h2::after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(269.24deg,#6C73EE 6.3%,#784BCE 92.64%);
+  bottom: 0;
+  left: 0;
+}
+
+.c1 {
+  font-family: Saira,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 3.2rem;
+  color: #F1EFFD;
+  font-weight: 500;
+  position: relative;
+}
+
+.c1::after {
+  content: '';
+  position: absolute;
+  width: 7.2rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(269.24deg,#6C73EE 6.3%,#784BCE 92.64%);
+  bottom: 0;
+  left: 0;
+}
+
+.c2 {
+  margin-top: 4.8rem;
+}
+
+.c2 ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+  gap: 1.6rem;
+}
+
+.c2 ul li {
+  width: 100%;
+}
+
+.c2 ul li a {
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: linear-gradient(106.42deg,rgba(21,17,44,0.4) 0%,rgba(21,17,44,0.2) 100%);
+  border: 2px solid #221D3F;
+  border-radius: 0.4rem;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.6rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #9694A6;
+}
+
+.c2 ul li a:hover {
+  border-color: #6B58E9;
+  color: #6B58E9;
+}
+
+.c3 {
+  margin-top: 4.8rem;
+}
+
+.c3 code {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear-gradient(106.42deg,rgba(21,17,44,0.4) 0%,rgba(21,17,44,0.2) 100%);
+  border: 2px solid #221D3F;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  margin: 0.8rem 0;
+}
+
+@media (max-width:768px) {
+  .c3 code {
+    overflow-x: scroll;
+  }
+}
+
+<div
   class="c0"
 >
-  test
-</h1>
+  <h1
+    class="c1"
+  >
+    Boilerplate NextJS
+  </h1>
+  <div
+    class="c2"
+  >
+    <h2>
+      This project uses lot of stuff as:
+    </h2>
+    <ul>
+      <li>
+        <a
+          href="https://www.typescriptlang.org/"
+        >
+          Typescript
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://nextjs.org/"
+        >
+          NextJS
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://styled-components.com/"
+        >
+          Styled Components
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://jestjs.io/"
+        >
+          Jest
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://testing-library.com/docs/react-testing-library/intro/"
+        >
+          React Testing Library
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://storybook.js.org/"
+        >
+          Storybook
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://eslint.org/"
+        >
+          ESLint
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://prettier.io/"
+        >
+          Prettier
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/typicode/husky"
+        >
+          Husky
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/shadowwalker/next-pwa"
+        >
+          Next PWA
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="c3"
+  >
+    <h2>
+      Clonning project
+    </h2>
+    <code>
+      yarn create next-app -e https://github.com/andrejr971/boilerplate-next 'name project'
+    </code>
+  </div>
+  <div
+    class="c3"
+  >
+    <h2>
+      Getting Started
+    </h2>
+    <p>
+      First, run the development server:
+    </p>
+    <code>
+      npm run dev
+      <br />
+      # 
+      <br />
+      or yarn dev
+    </code>
+    <p>
+      Open http://localhost:3000 with your browser to see the result. You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
+    </p>
+  </div>
+</div>
 `;

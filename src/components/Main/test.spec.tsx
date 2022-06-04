@@ -4,9 +4,14 @@ import { Main } from '.';
 
 describe('<Main />', () => {
   it('should render heading', () => {
-    const { container } = renderWithTheme(<Main title="test" />);
+    const { container } = renderWithTheme(<Main />);
 
-    expect(screen.getByRole('heading', { name: /test/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /Boilerplate NextJS/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /typescript/i }),
+    ).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });
